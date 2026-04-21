@@ -106,3 +106,41 @@ function binarySearch(arr, target) {
 
     return -1;
 }
+
+
+// ===== Исходный массив =====
+let arr = [5, 3, 8, 4, 2];
+
+
+// ===== bubbleSort =====
+console.log("bubbleSort:");
+console.log(bubbleSort([...arr])); // [2,3,4,5,8]
+
+
+// ===== heapSort =====
+console.log("\nheapSort:");
+console.log(heapSort([...arr])); // [2,3,4,5,8]
+
+
+// ===== mergeSort =====
+console.log("\nmergeSort:");
+console.log(mergeSort([...arr])); // [2,3,4,5,8]
+
+
+// ===== quickSort =====
+console.log("\nquickSort:");
+console.log(quickSort([...arr])); // [2,3,4,5,8]
+
+
+// ===== linearSearch =====
+console.log("\nlinearSearch:");
+console.log(linearSearch(arr, 4)); // индекс 3
+console.log(linearSearch(arr, 10)); // -1
+
+
+// ===== binarySearch =====
+let sorted = mergeSort([...arr]);
+
+console.log("\nbinarySearch:");
+console.log(binarySearch(sorted, 4)); // индекс
+console.log(binarySearch(sorted, 10)); // -1
