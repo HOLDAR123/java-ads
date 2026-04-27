@@ -1,7 +1,3 @@
-/**
- * Динамическая очередь (FIFO). Несколько очередей — через QueueRegistry.
- */
-
 class Queue {
     constructor() {
         this._items = []
@@ -33,7 +29,6 @@ class Queue {
         this._items.length = 0
     }
 
-    /** Печать от головы к хвосту. */
     display() {
         if (this.isEmpty()) {
             console.log("(empty queue)")

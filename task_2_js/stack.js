@@ -1,7 +1,3 @@
-/**
- * Динамический стек (на массиве). Поддержка нескольких стеков — через StackRegistry.
- */
-
 class Stack {
     constructor() {
         this._items = []
